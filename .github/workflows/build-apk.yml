@@ -36,7 +36,7 @@ jobs:
       - name: Extract D1 project
         run: |
           mkdir project
-          unzip -q D1_Cloud_Build_Ready.zip -d project
+           unzip -q D1_Cloud_Build_Ready_FIXED.zip -d project
       - name: Build APK
         run: gradle -p project assembleDebug -Pkotlin.jvm.target.validation.mode=warning
 
